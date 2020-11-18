@@ -1,3 +1,5 @@
-FROM mysql:5.7
-ADD script.sql /docker-entrypoint-initdb.d
-
+FROM java:8
+COPY . /usr/src/app
+WORKDIR /usr/src/app
+COPY app.jar /usr/src/app
+CMD ["java","-jar", "Projekt-1.0-SNAPSHOT-jar-with-dependencies.jar"]
