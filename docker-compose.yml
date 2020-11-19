@@ -7,7 +7,7 @@ services:
   ports:
    - 3306:3306
   networks:
-   BridgeAJ:
+   BridgeZad1:
     ipv4_address: 10.0.10.3
   environment:
       MYSQL_ROOT_PASSWORD: "root"
@@ -20,11 +20,11 @@ services:
   depends_on:
    - mysql
   networks:
-   - BridgeAJ
+   - BridgeZad1
   stdin_open: true
   tty: true
 networks:
- BridgeAJ:
+ BridgeZad1:
   driver: bridge
   ipam:
    config:
