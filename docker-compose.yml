@@ -13,7 +13,7 @@ services:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "AJarszak"
       MYSQL_USER: "AJarszak"
-      MYSQL_PASSWORD: "admin"
+      MYSQL_PASSWORD: "root"
  java:
   image: adam1000a1/lab_java
   container_name: Jarszak_Java
