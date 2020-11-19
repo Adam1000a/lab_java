@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 public class App {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_CONNECTION = "jdbc:mysql://Full_2020_086303:3306/AJarszak"; 
-    static final String USER = "root";
+    static final String USER = "AJarszak";
     static final String PASSWORD = "root";
  
     static Scanner in = new Scanner( System.in);
