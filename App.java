@@ -96,7 +96,7 @@ public class App {
         final String lastname = in.nextLine();
 
  
-        String sql = " INSERT INTO Users (ID, NAME, LASTNAME, EMAIL) VALUES ('"+id+"', '"+name+"', '"+lastname+"')";
+        String sql = " INSERT INTO Users (ID, Imie, Nazwisko) VALUES ('"+id+"', '"+name+"', '"+lastname+"')";
         stmt.executeUpdate(sql);
     }
  
