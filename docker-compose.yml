@@ -1,0 +1,31 @@
+version: "3.7"
+services: 
+ mysql:
+  image: mysql:latest
+  restart: always
+  container_name: Full_2020_086303
+  ports:
+   - 3306:3306
+  networks:
+   BridgeAJ:
+    ipv4_address: 10.0.10.3
+  environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "AJarszak"
+      MYSQL_USER: "admin"
+      MYSQL_PASSWORD: "admin"
+ java:
+  image: adam1000a1/lab_java
+  container_name: Jarszak_Java
+  depends_on:
+   - mysql
+  networks:
+   - BridgeAJ
+  stdin_open: true
+  tty: true
+networks:
+ BridgeAJ:
+  driver: bridge
+  ipam:
+   config:
+    - subnet: 10.0.10.0/24
