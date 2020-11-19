@@ -12,7 +12,7 @@ services:
   environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "AJarszak"
-      MYSQL_USER: "admin"
+      MYSQL_USER: "AJarszak"
       MYSQL_PASSWORD: "admin"
  java:
   image: adam1000a1/lab_java
